@@ -1,0 +1,5 @@
+INPUT:
+HAV A LIST "x" LIKE [1, 2, 3]:
+
+EXPECTED:
+recognize named list declaration

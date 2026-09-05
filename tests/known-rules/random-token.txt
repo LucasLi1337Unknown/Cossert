@@ -1,0 +1,5 @@
+INPUT:
+PICKARANDOM(FROM(1)TO(5)W/O(3))
+
+EXPECTED:
+recognize random; exclude 3

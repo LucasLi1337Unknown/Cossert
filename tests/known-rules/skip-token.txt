@@ -1,0 +1,5 @@
+INPUT:
+SKIPTIS
+
+EXPECTED:
+recognize skip-current-iteration

@@ -1,0 +1,5 @@
+INPUT:
+TAKITOUT{x}[1]
+
+EXPECTED:
+recognize stable-slot removal

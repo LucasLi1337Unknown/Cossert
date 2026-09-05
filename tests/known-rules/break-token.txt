@@ -1,0 +1,5 @@
+INPUT:
+FRGETABTIT
+
+EXPECTED:
+recognize exit-loop
