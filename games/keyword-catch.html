@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keyword Catch</title><link rel="stylesheet" href="style.css"></head><body><main>
+<div class="top"><h1>Keyword Catch</h1><a href="index.html">← Arcade</a></div>
+<div class="card"><div class="score">Score: <span id="s">0</span> | Time: <span id="t">30</span>s</div><p>Click only preserved Cossert keywords/forms. Fake words cost a point.</p></div>
+<div id="arena" class="grid four"></div><button onclick="start()">Restart</button>
+<script>
+const real=["SKIPTIS","FRGETABTIT","FINALANSER","PICKARANDOM","TAKITOUT","HAV A LIST","FROM","TO","W/O"];
+const fake=["GOBACKNOW","RETURNIT","RANDOMIZE","BREAKNOW","ELSEIF","MAKEARRAY","SKIPALL","GETRANDOM","DELETEITEM"];
+let score=0,time=30,timer;
+function fill(){let a=[...real,...fake].sort(()=>Math.random()-.5).slice(0,12);arena.innerHTML=a.map(x=>`<button class="slot" onclick="hit(this,'${x.replace(/'/g,"")}')">${x}</button>`).join("")}
+function hit(b,x){if(real.includes(x)){score++;b.disabled=true;b.classList.add("good")}else{score=Math.max(0,score-1);b.classList.add("bad")}s.textContent=score}
+function start(){clearInterval(timer);score=0;time=30;s.textContent=0;t.textContent=30;fill();timer=setInterval(()=>{time--;t.textContent=time;if(time<=0){clearInterval(timer);arena.innerHTML=`<div class="card">Final score: <b>${score}</b></div>`}},1000)}
+start()
+</script></main></body></html>

@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stable Slot Memory</title><link rel="stylesheet" href="style.css"></head><body><main>
+<div class="top"><h1>Stable Slot Memory</h1><a href="index.html">← Arcade</a></div>
+<div class="card"><p>Cossert list removals keep IDs stable. Watch a slot disappear, then identify its original ID.</p>
+<div id="slots" class="grid four"></div><p id="msg"></p><button onclick="round()">New round</button></div>
+<script>
+let answer=-1;
+function round(){msg.textContent="Memorize the values...";let vals=Array.from({length:8},(_,i)=>String.fromCharCode(65+i));slots.innerHTML=vals.map((v,i)=>`<div class="slot">${i}: ${v}</div>`).join("");answer=Math.floor(Math.random()*8);
+setTimeout(()=>{let arr=[...vals];arr[answer]="";slots.innerHTML=arr.map((v,i)=>`<button class="slot" onclick="guess(${i})">${i}: ${v||"EMPTY"}</button>`).join("");msg.textContent="Which original ID was taken out?"},1200)}
+function guess(i){msg.textContent=i===answer?`Correct — slot ${answer} became empty, later IDs did not shift.`:`Nope. The removed stable ID was ${answer}.`}
+round()
+</script></main></body></html>

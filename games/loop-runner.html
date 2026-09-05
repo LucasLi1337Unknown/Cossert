@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loop Runner</title><link rel="stylesheet" href="style.css"></head><body><main>
+<div class="top"><h1>Loop Runner</h1><a href="index.html">← Arcade</a></div>
+<div class="card"><p>You are on iteration <b id="i">1</b> of 10.</p><p id="event"></p>
+<button onclick="act('SKIPTIS')">SKIPTIS</button> <button onclick="act('FRGETABTIT')">FRGETABTIT</button> <button onclick="act('CONTINUE')">Do normal work</button>
+<p id="msg"></p><div class="score">Score: <span id="score">0</span></div></div>
+<script>
+let iter=1,sc=0,need="";
+function setup(){if(iter>10){event.textContent="Loop finished!";return}let n=Math.random();need=n<.35?"SKIPTIS":n<.5?"FRGETABTIT":"CONTINUE";event.textContent=need==="SKIPTIS"?"Problem detected in this iteration — skip it.":need==="FRGETABTIT"?"Fatal condition found — exit the loop.":"Everything is normal — process this iteration."}
+function act(a){if(iter>10)return;if(a===need){sc++;msg.textContent="Correct."}else{sc=Math.max(0,sc-1);msg.textContent=`Wrong — best action was ${need}.`}score.textContent=sc;if(a==="FRGETABTIT"){event.textContent="Loop exited.";iter=11;return}iter++;i.textContent=iter;setTimeout(()=>{msg.textContent="";setup()},500)}
+setup()
+</script></main></body></html>

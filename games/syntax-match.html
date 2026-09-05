@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Syntax Match</title><link rel="stylesheet" href="style.css"></head><body><main>
+<div class="top"><h1>Syntax Match</h1><a href="index.html">← Arcade</a></div>
+<div class="card"><p id="q"></p><div id="answers"></div><p id="msg"></p><div class="score">Score: <span id="score">0</span></div></div>
+<script>
+const qs=[
+["SKIPTIS",["Skip current loop iteration","Exit loop","Return value"],0],
+["FRGETABTIT",["Pick a random number","Exit loop","Declare a list"],1],
+["FINALANSER(value)",["Return a function result","Remove list item","Skip iteration"],0],
+["TAKITOUT{name}[id]",["Shift all later IDs","Remove while preserving stable IDs","Create a function"],1],
+['HAV A LIST "name" LIKE [items]:',["Declare a named list","Break a loop","Exclude a random value"],0],
+["W/O(value)",["Required return type","Random exclusion","Loop counter"],1]
+];let sc=0,current;
+function next(){current=qs[Math.floor(Math.random()*qs.length)];q.innerHTML=`What does <b>${current[0]}</b> mean?`;answers.innerHTML=current[1].map((x,i)=>`<p><button onclick="pick(${i})">${x}</button></p>`).join("");msg.textContent=""}
+function pick(i){if(i===current[2]){sc++;msg.textContent="Correct!"}else{sc=Math.max(0,sc-1);msg.textContent="Wrong."}score.textContent=sc;setTimeout(next,600)}
+next()
+</script></main></body></html>
