@@ -1,0 +1,2 @@
+HAV A LIST "list16" LIKE [160, 161, 162, 163, 164]:
+TAKITOUT{list16}[1]
