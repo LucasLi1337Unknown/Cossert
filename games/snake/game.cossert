@@ -1,0 +1,6 @@
+HAV A LIST "board" LIKE [24, 16]:
+HAV A LIST "startSnake" LIKE ["8,8", "7,8", "6,8"]:
+HAV A LIST "foodValues" LIKE [10, 10, 10, 20, 30]:
+HAV A LIST "speedMs" LIKE [150, 130, 112, 96, 82, 70]:
+HAV A LIST "directions" LIKE ["UP", "DOWN", "LEFT", "RIGHT"]:
+PICKARANDOM(FROM(1)TO(9)W/O(5))

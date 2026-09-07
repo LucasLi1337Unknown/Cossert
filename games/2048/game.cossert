@@ -1,0 +1,4 @@
+HAV A LIST "boardSize" LIKE [4]:
+HAV A LIST "spawnValues" LIKE [2, 2, 2, 2, 2, 2, 2, 2, 2, 4]:
+HAV A LIST "target" LIKE [2048]:
+HAV A LIST "directions" LIKE ["UP", "DOWN", "LEFT", "RIGHT"]:

@@ -1,0 +1,4 @@
+HAV A LIST "player" LIKE [3, 7]:
+HAV A LIST "enemyRows" LIKE [3, 4, 5]:
+HAV A LIST "enemyScore" LIKE [10, 15, 20, 25]:
+HAV A LIST "waveSpeed" LIKE [0.55, 0.7, 0.9, 1.1, 1.35]:

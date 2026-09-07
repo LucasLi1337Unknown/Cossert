@@ -1,0 +1,5 @@
+HAV A LIST "physics" LIKE [0.72, -12.5]:
+HAV A LIST "obstacleWidths" LIKE [24, 30, 38, 46]:
+HAV A LIST "coinScores" LIKE [10, 15, 20]:
+HAV A LIST "speed" LIKE [6, 7, 8, 9, 10, 11]:
+HAV A LIST "spawnGap" LIKE [85, 100, 120, 145]:
