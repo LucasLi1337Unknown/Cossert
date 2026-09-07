@@ -1,0 +1,3 @@
+HAV A LIST "inventory" LIKE ["APPLE", "KEY", "MAP", "COIN", "TORCH", "GEM"]:
+
+TAKITOUT{inventory}[2]
