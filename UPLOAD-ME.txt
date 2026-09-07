@@ -1,9 +1,0 @@
-Upload/replace the contents of this package's games/ folder in your repository's games/ folder.
-
-This is intentionally a SMALL first real-Cossert arcade update:
-- shared games/interpreter.js
-- actual .cossert source per game
-- 3 games rewritten around documented Cossert compatibility-core syntax
-- HTML/CSS only host/render the browser experience
-
-The old standalone HTML-only games can be removed or kept separately, but the new games/index.html links to these real-Cossert versions.
