@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#22c55e" stop-opacity=".42"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/><circle cx="670" cy="80" r="150" fill="#22c55e" opacity=".12"/>
+<circle cx="115" cy="210" r="92" fill="#22c55e" opacity=".2"/><text x="115" y="245" text-anchor="middle" font-size="105">🐍</text>
+<text x="235" y="190" fill="white" font-family="system-ui,sans-serif" font-weight="900" font-size="58">SNAKE</text>
+<text x="238" y="245" fill="#dbeafe" font-family="system-ui,sans-serif" font-size="25">Eat • Grow • Survive</text>
+<rect x="238" y="282" width="150" height="48" rx="24" fill="#22c55e"/><text x="313" y="314" text-anchor="middle" fill="#07111f" font-family="system-ui,sans-serif" font-weight="900" font-size="20">PLAY NOW</text>
+</svg>

@@ -1,0 +1,2 @@
+Delete the old games/ folder in your Cossert repository, then upload this package's games/ folder in its place.
+Do not upload this instruction file unless you want it in the repo.
