@@ -1,4 +1,0 @@
-HAV A LIST "range" LIKE [1, 2, 3, 4, 5, 6, 7, 8, 9]:
-HAV A LIST "rounds" LIKE [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-
-PICKARANDOM(FROM(1)TO(9)W/O(5))
